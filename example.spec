@@ -9,6 +9,8 @@ License:	GPLv2+
 URL:		http://github.com/example
 Source0:	%{name}-%{version}.tar.gz
 
+BuildRequires:	gcc
+
 %description
 Simple example to demonstrate copr's abilites.
 
