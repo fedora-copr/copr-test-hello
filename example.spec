@@ -1,20 +1,22 @@
 %global debug_package %{nil}
-Name:       example
-Version:	1.0.13
+Name:		{{{ git_name name=example }}}
+
+# We need lead=1.0 because the last tagged version is 1.0.13
+Version:	{{{ git_version lead=1.0 }}}
 Release:	1%{?dist}
 Summary:	This is a simple example to test copr
 
 Group:		Applications/File
 License:	GPLv2+
 URL:		http://github.com/example
-Source0:	%{name}-%{version}.tar.gz
+Source0:	{{{ git_dir_pack }}}
 
 %description
 Simple example to demonstrate copr's abilites.
 
 
 %prep
-%setup -q
+{{{ git_dir_setup_macro }}}
 
 
 %build
