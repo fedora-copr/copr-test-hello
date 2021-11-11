@@ -4,6 +4,9 @@ Version:	1.0.13
 Release:	1%{?dist}
 Summary:	This is a simple example to test copr
 
+BuildRequires:	gcc
+BuildRequires:	make
+
 Group:		Applications/File
 License:	GPLv2+
 URL:		http://github.com/example
