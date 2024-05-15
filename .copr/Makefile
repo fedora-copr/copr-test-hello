@@ -4,4 +4,5 @@ srpm:
 	touch $(outdir)/`basename $(spec)`
 
 	# https://github.com/fedora-copr/copr/issues/3241
-	python -c 'print("\x80")'
+	dnf -y install python3
+	python3 -c 'print("\x80")'
